@@ -8,3 +8,10 @@
 <!-- https://www.freecodecamp.org/news/build-accordion-menu-in-react-without-external-libraries/ -->
 
 <!-- https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/hub/faq-accordion-card-r1Cd4XRzc -->
+<!--
+  // "eslintConfig": {
+  //   "extends": [
+  //     "react-app",
+  //     "react-app/jest"
+  //   ]
+  // }, -->
