@@ -1,7 +1,9 @@
 .accordion__title {
   display: flex;
   align-items: center;
-  height: 35px;
+  /* height: 35px; */
+  padding-bottom: 15px;
+  padding-top: 16px;
   background: #fff;
   cursor: pointer;
   user-select: none;
@@ -9,11 +11,17 @@
 
 .accordion__title-text {
   font-size: 14px;
+  color: var(--clr-title);
   font-weight: 400;
 }
 
 .accordion__title-text_bold {
   font-weight: 700;
+  color: var(--clr-bold-title);
+}
+
+.accordion__title-text:hover {
+  color: var(--clr-hover);
 }
 
 .accordion__item-icon {
@@ -35,6 +43,7 @@
   opacity: 0;
   transform: translateY(15%);
   transition: 0.2s all ease;
+  color: var(--clr-text);
 }
 
 .accordion__content_show {
@@ -46,6 +55,6 @@
 }
 
 .accordion__content-container {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #e8e8ea;
   overflow: hidden;
 }

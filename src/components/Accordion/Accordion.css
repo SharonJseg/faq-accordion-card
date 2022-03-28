@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   margin-right: 95px;
+  margin-top: 65px;
+  align-self: flex-start;
 }
 
 .accordion__header {
@@ -26,12 +28,26 @@
 
 .accordion__main-image {
   position: absolute;
-  left: 0;
+  top: 50%;
+  left: -86px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.test {
+  position: relative;
+  width: 100%;
 }
 
 .accordion__main-pattern {
   position: absolute;
-  left: -500px;
-  top: -150px;
-  /* object-fit: cover; */
+  left: -535px;
+  top: -280px;
+  z-index: 0;
+}
+
+.accordion__box {
+  position: absolute;
+  left: 0;
+  z-index: 2;
 }

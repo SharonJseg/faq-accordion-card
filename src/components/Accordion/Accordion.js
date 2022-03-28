@@ -27,11 +27,11 @@ function Accordion() {
           onToggle={toggleAccordionItemHandler}
         />
       </div>
-      {/* <img
+      <img
         src={mainImage}
         alt='placeholder pic'
         className='accordion__main-image'
-      /> */}
+      />
       <img src={pattern} alt='pattern' className='accordion__main-pattern' />
     </section>
   );
