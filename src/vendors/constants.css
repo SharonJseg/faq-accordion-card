@@ -1,14 +1,14 @@
 :root {
   /* Font families */
-  --ff: 'Kumbh-Sans', sans-serif;
+  --ff: 'Kumbh Sans', sans-serif;
 
   /* Font Sizes */
-  --fs-small: 0.625rem;
-  --fs-base: 1.14rem;
+  --fs-small: 0.75rem;
+  --fs-base: 0.875rem;
   --fs-big: 1.125rem;
 
   /* Colors */
-  --clr-background: #19a1ae;
-  --clr-dark-gray: #2e3349;
-  --clr-gray: #6b7082;
+  --clr-bold-title: #1e1f36;
+  --clr-title: #4b4c5f;
+  --clr-text: #787887;
 }

@@ -3,10 +3,6 @@ import './AccordionItem.css';
 import arrowdown from '../../images/icon-arrow-down.svg';
 
 function AccordionItem({ accordionObj, isActive, onToggle, id }) {
-  //   const toggleAccordionHandler = () => {
-  //     onToggle(id);
-  //   };
-
   return (
     <li className='accordion__item'>
       <div className='accordion__title' onClick={onToggle}>
