@@ -1,21 +1,21 @@
 .accordion__title {
   display: flex;
   align-items: center;
-  /* height: 35px; */
-  padding-bottom: 15px;
-  padding-top: 16px;
   background: #fff;
   cursor: pointer;
   user-select: none;
 }
 
 .accordion__title-text {
+  padding-bottom: 15px;
+  padding-top: 16px;
   font-size: 14px;
   color: var(--clr-title);
   font-weight: 400;
 }
 
 .accordion__title-text_bold {
+  padding-bottom: 11px;
   font-weight: 700;
   color: var(--clr-bold-title);
 }

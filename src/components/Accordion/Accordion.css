@@ -8,7 +8,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -46,8 +46,36 @@
   z-index: 0;
 }
 
-.accordion__box {
-  position: absolute;
-  left: 0;
-  z-index: 2;
+@media screen and (max-width: 1024px) {
+  /* .accordion__wrapper {
+    margin-right: 50px;
+  } */
+
+  .accordion__main-image {
+    left: -100px;
+    width: 50%;
+  }
+
+  .accordion__main-pattern {
+    left: -280px;
+    top: -15px;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion__wrapper {
+    margin-right: 30px;
+  }
+
+  .accordion__main-image {
+    left: -100px;
+    width: 50%;
+  }
+
+  .accordion__main-pattern {
+    left: -250px;
+    top: 20px;
+    width: 75%;
+  }
 }
