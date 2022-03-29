@@ -3,6 +3,7 @@ import './Accordion.css';
 import { ACCORDION_LIST } from '../../utils/constants.js';
 import mainImage from '../../images/illustration-woman-online-desktop.svg';
 import pattern from '../../images/bg-pattern-desktop.svg';
+import patternMobile from '../../images/bg-pattern-mobile.svg';
 
 import AccordionList from '../AccordionList/AccordionList';
 
@@ -32,7 +33,12 @@ function Accordion() {
         alt='placeholder pic'
         className='accordion__main-image'
       />
-      <img src={pattern} alt='pattern' className='accordion__main-pattern' />
+
+      {/* <img src={pattern} alt='pattern' className='accordion__main-pattern' /> */}
+      <picture>
+        <source srcset={patternMobile} media='(max-width: 375px)' />
+        <img src={pattern} alt='pattern' className='accordion__main-pattern' />
+      </picture>
     </section>
   );
 }

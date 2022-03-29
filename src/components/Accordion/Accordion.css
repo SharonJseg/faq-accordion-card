@@ -1,7 +1,6 @@
 .accordion {
   width: 100%;
   max-width: 920px;
-  height: 509px;
   background: #fff;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 23px;
@@ -10,6 +9,7 @@
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  padding-bottom: 83px;
 }
 
 .accordion__wrapper {
@@ -17,7 +17,11 @@
   flex-direction: column;
   margin-right: 95px;
   margin-top: 65px;
+  margin-bottom: 83px;
   align-self: flex-start;
+  max-width: 350px;
+  width: 100%;
+  max-height: 286px;
 }
 
 .accordion__header {
@@ -34,11 +38,6 @@
   transform: translateY(-50%);
 }
 
-.test {
-  position: relative;
-  width: 100%;
-}
-
 .accordion__main-pattern {
   position: absolute;
   left: -535px;
@@ -47,10 +46,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* .accordion__wrapper {
-    margin-right: 50px;
-  } */
-
   .accordion__main-image {
     left: -100px;
     width: 50%;
@@ -68,6 +63,12 @@
     margin-right: 30px;
   }
 
+  .accordion__header {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 38px;
+  }
+
   .accordion__main-image {
     left: -100px;
     width: 50%;
@@ -77,5 +78,56 @@
     left: -250px;
     top: 20px;
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .accordion {
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .accordion__wrapper {
+    margin-right: 0;
+    margin-left: 10%;
+  }
+
+  .accordion__main-image {
+    left: 250px;
+    top: 45px;
+  }
+  .accordion__main-pattern {
+    left: 250px;
+    top: -85px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .accordion {
+    max-width: 327px;
+    height: 543px;
+    align-items: center;
+    margin-top: 78px;
+  }
+
+  .accordion__wrapper {
+    align-items: center;
+    justify-content: center;
+    margin-top: 132px;
+    margin-right: 0;
+    margin-bottom: 48px;
+    margin-left: 0;
+  }
+
+  .accordion__main-image {
+    display: none;
+  }
+
+  .accordion__main-pattern {
+    left: 50%;
+    top: -8px;
+    transform: translateX(-50%);
+    width: 245px;
   }
 }

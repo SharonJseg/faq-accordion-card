@@ -1,5 +1,10 @@
 .accordion__list {
   max-width: 350px;
   list-style: none;
-  background: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  .accordion__list {
+    max-width: 279px;
+  }
 }

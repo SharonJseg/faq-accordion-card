@@ -24,6 +24,10 @@
   color: var(--clr-hover);
 }
 
+.accordion__item {
+  width: 100%;
+}
+
 .accordion__item-icon {
   width: 8px;
   height: 4px;
@@ -39,6 +43,7 @@
   font-size: 12px;
   line-height: 18px;
   height: 0;
+  max-width: 319px;
   visibility: hidden;
   opacity: 0;
   transform: translateY(15%);
@@ -57,4 +62,7 @@
 .accordion__content-container {
   border-bottom: 1px solid #e8e8ea;
   overflow: hidden;
+}
+
+@media screen and (max-width: 375px) {
 }
